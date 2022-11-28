@@ -5,6 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddnewsComponent } from './addnews/addnews.component';
 import { ViewnewsComponent } from './viewnews/viewnews.component';
+import { Route, RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AddnewsComponent
+  },
+  {
+    path:"viewnews",
+    component:ViewnewsComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -14,7 +26,8 @@ import { ViewnewsComponent } from './viewnews/viewnews.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
