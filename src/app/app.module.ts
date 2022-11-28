@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddnewsComponent } from './addnews/addnews.component';
 import { ViewnewsComponent } from './viewnews/viewnews.component';
 import { Route, RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -22,7 +23,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddnewsComponent,
-    ViewnewsComponent
+    ViewnewsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
